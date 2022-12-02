@@ -1,33 +1,27 @@
-# Projet 5 => chapitre 7, 8, 9
+# Projet5
 
-Dans ce projet nous allons nous intéresser à l'injection des dépendances via l'utilisation d'un service ! Vous allez créer un service qui sera partagé entre deux composants, pratique très courante dans une application Angular.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
-Regardez bien les chapitres 7 8 et 9 si vous bloquez sur le projet.
+## Development server
 
-Bon courage :)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Lancer le projet
+## Code scaffolding
 
-Pour lancer l'application il faut d'abord installer les dépendances avec npm : 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-`npm i`
+## Build
 
-Puis lancer le serveur de développement avec : 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-`ng serve` ou `npm start`
+## Running unit tests
 
-## Objectifs
-- [ ] Créer un service `UserService` dans le dossier shared/services.
-- [ ] Dans ce service, utilisez un attribut public ( `public users` ) qui sera un `BehaviorSubject` de type `string[]`. Ajoutez également une méthode `addUser()` pour pouvoir ajouter un nom d'utilisateur dans cet attribut.
-- [ ] Injectez le service dans le composant `AddUserComponent`.
-- [ ] Utilisez la méthode `AddUser()` du service `UserService` pour ajouter un user dans le BehaviorSubject `public users`.
-- [ ] Dans le composant `UserListComponent`, injectez le service `UserService` et utilisez l'attribut `users` pour récuperer la liste des users et l'afficher dans la liste.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-      
-## Avant de finir le projet
+## Running end-to-end tests
 
-Pensez à pusher votre travail avant de cliquer sur 'terminer le projet'.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Besoin d'aide ?
+## Further help
 
-Demandez-nous dans le chat nous vous aiderons :)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
